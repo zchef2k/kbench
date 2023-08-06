@@ -1,6 +1,6 @@
-# KBench
+# KBench for ARM64
 
-Various benchmark for storage and Kubernetes.
+Various benchmark for storage and Kubernetes running on ARM nodes.
 
 ## FIO
 
