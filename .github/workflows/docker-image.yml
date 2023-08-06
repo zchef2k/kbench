@@ -9,11 +9,12 @@ on:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
-  DOCKER_TARGET_PLATFORM: linux/arm64
 
 jobs:
   build-and-push-image:
     runs-on: ubuntu-latest
+    env:       
+      DOCKER_TARGET_PLATFORM: linux/arm64
     permissions:
       contents: read
       packages: write
