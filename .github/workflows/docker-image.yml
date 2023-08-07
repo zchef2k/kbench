@@ -49,3 +49,5 @@ jobs:
           context: .
           platforms: linux/arm64v8
           push: ${{ github.event_name != 'pull_request' }}
+          tags: ghcr.io/${{ github.repository }}:latest
+          labels: ${{ steps.vars.outputs.sha_short }}
